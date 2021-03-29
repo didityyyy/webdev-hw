@@ -1,0 +1,27 @@
+.hero-bg{
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://static2.bigstockphoto.com/2/4/2/large1500/242966671.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-bg h1 {
+    color: white;
+}
+
+.left-side{
+    background-image: url("https://thumbs.dreamstime.com/z/people-contacts-web-background-global-technology-connections-bright-140701196.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+section:not(:first-child) {
+    padding: 40px 0;
+}

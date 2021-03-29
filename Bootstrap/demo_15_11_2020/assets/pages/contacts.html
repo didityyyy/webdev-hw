@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 4</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Boorstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="../libs/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+      <!-- Hero -->
+      <section class="hero">
+
+          <!-- NavBar -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                            <a class="navbar-brand" href="../../index.html">Navbar</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                          
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="../../index.html">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item active">
+                                  <a class="nav-link" href="#">Contact page</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown
+                                  </a>
+                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                  </div>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                </li>
+                              </ul>
+                              <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                              </form>
+              
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                Login
+                              </button>
+                            </div>
+                          </nav>
+                    </div>
+                </div>
+          <!-- /NavBar -->
+
+          <!-- Hero BG -->
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="hero-bg">
+                      <h1>Contact page</h1>
+                    </div>
+                  </div>
+                </div>
+          <!-- /Hero BG -->
+      </section>
+      <!-- /Hero -->
+
+      <section>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="left-side">
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="right-side">
+              <h2>Contacts</h2>
+
+              <form>
+                <!-- First and last name -->
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="firstName">First Name</label>
+                      <input type="text" id="firstName" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="lastName">Last Name</label>
+                      <input type="text" id="lastName" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <!-- /First and last name -->
+
+                <!-- Address -->
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <label for="address">Address</label>
+                      <input type="text" id="address" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <!-- /Address -->
+                
+                <!-- Gender -->
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <label for="">Gender</label>
+                      <div>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                      </div>
+                      <div>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Gender -->
+
+                <!-- State -->
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="state">State</label>
+                      <select name="state" id="state" class="form-control">
+                        <option>Bulgaria</option>
+                        <option>England</option>
+                        <option>Germany</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="city">City</label>
+                      <select name="city" id="city" class="form-control">
+                        <option>Sofia</option>
+                        <option>Heidelberg</option>
+                        <option>Bristol</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!-- /State -->
+
+                <!-- Actions -->
+                <div class="row justify-content-end">
+                  <div class="col-sm-6 text-right">
+                    <button class="btn btn-default">Reset</button>
+                    <button class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+                <!-- /Actions -->
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- /Modal -->
+
+     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
+    <script src="../libs/jqueri/jqueri.js"></script>
+    <script src="../libs/bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="../js/js.js"></script>
+
+</body>
+</html>
