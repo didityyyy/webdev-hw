@@ -1,0 +1,4 @@
+www.jquery.com => Download the compressed, production jQuery 3.5.1
+
+
+www.jqueryui.com => 
