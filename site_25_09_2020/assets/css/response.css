@@ -1,0 +1,185 @@
+
+
+ @media (min-width: 576px) and (max-width: 768px) { 
+    .features ul:first-of-type li:first-child::after, 
+    .features ul:first-of-type li:nth-child(2)::after
+    , .features ul:first-of-type li:last-child::after
+    , .features ul:last-of-type li:first-child::before
+    , .features ul:last-of-type li:nth-child(2)::before
+    , .features ul:last-of-type li:last-child::before
+    {
+        content: "";
+        border: none;
+        background-color: #F8F8F8;
+    }
+    
+    .smartwatch {
+        background-size: 40%;
+    }
+    .smartwatch ul {
+        padding: 0;
+    }
+    .smartwatch ul li {
+        height: 150px;
+        
+    }
+    .smartwatch ul li p {
+        font-size: small;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+  .btn-medium {
+    width: 115px;
+} 
+
+ }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .container{width: 100%;}
+    .half-width { width: 60%; }
+    .hero{
+        height: auto;
+        background-position: 100% 5%;
+        background-size: 35%;
+    }
+    .hero-title { font-size: 30px;} 
+    .features {background-image: none;}
+    .features ul { width: 40%;}
+    .features ul:first-of-type li::after , 
+    .features ul:last-of-type li::before  {
+        font-size: 1em;
+}
+    .features ul li::after{
+        right: -40px;
+}
+ }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+
+ }
+
+/* // Extra large devices (large desktops) */
+/* // No media query since the extra-large breakpoint has no upper bound on its width */
+
+@media (min-width: 1200px) {
+    
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .features {flex-direction: column;}
+    .features ul {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 35px;
+    }
+    .features ul li::after{
+        right: 103%;
+}
+    .features ul li::before{
+        left: -50px;
+}
+    .half-width { width: 100%; }
+    .hero-title { font-size: 30px; margin-bottom: 45px;}
+
+    .smartwatch {
+        background-size: 30%;
+        background-position: top;
+    }
+    .smartwatch ul {
+        margin: 0;
+        padding: 0;
+    }
+    .smartwatch ul:first-child {
+        padding: 250px 0 0 0;
+    }
+    .smartwatch ul li {
+        height: 150px;
+        padding: 0 0 40px 0px;
+    }
+    .smartwatch ul li p {
+        font-size: small;
+    }
+    .smartwatch ul li h5 {
+        margin: 10px;
+    }
+    .smartwatch ul li::before {
+        font-size: 1em;
+        padding: 5px;
+    }
+
+    .section-padding {
+        margin-top: 60px;
+    }
+    .section-padding .title-info {
+        font-size: small;
+    }
+    .head-review {
+        padding-bottom: 10px;
+    }
+    .reviews div .img1 {
+        width: 60px;
+        height: 60px;
+        top: -25px;
+        right: 150px;
+    }
+    .reviews section {
+        margin: 45px 0;
+    }
+    .customers::after {
+        bottom: -16px;
+        right: 45%;
+        font-size: 1em;
+    }
+    .reviews div {
+        display: block;
+    }
+    .price .title-info {
+        font-size: small;
+    }
+    .white-side .old-price {
+        font-size: 20px;
+        margin: 35%;
+    }
+    .white-side .round {
+        font-size: 12px;
+        margin-left: 30px;
+    }
+    .white-side .new {
+        font-size: 50px;
+    }
+    .white-side header h5 {
+        font-size: 11px;
+    }
+    .white-side ul {
+        padding-left: 5%;
+        line-height: 20px;
+    }
+    .btn-big {
+        width: 100px;
+    }
+    .red-side::after {
+        right: 40%;
+    }
+    .first-half {
+        padding: 30px 0 0 30px;
+    }
+    .contact-us {
+        padding: 30px 30px 0 0;
+    }
+    .flex {
+         display: block;
+    }
+    footer nav {
+        padding: 20px 40px;
+    }
+    .social-media {
+        padding: 10px 40px 10px;
+    }
+   
+ }

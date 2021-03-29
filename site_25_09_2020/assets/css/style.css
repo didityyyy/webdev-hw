@@ -1,0 +1,617 @@
+/* layout */
+body{
+    color: rgb(131, 122, 122);
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    color: rgb(131, 122, 122);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a + a, button + button {
+    margin-left: 15px;
+}
+
+a:hover{
+    color: rgb(113, 113, 238);
+
+}
+
+.container > section {
+    padding: 40px 20px;
+}
+
+.section-grey {
+    background-color: #F8F8F8;
+}
+
+.btn {
+    border-radius: 20px;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-small{
+    width:100px;
+    margin: 0 44%;
+}
+
+.btn-medium {
+    width: 150px;
+}
+
+.btn-big{
+    width: 265px;
+}
+
+.btn-large {
+    width: 100%;
+}
+
+.btn-red{
+    background-color: rgb(231, 33, 15);
+}
+
+.btn-red:hover {
+    background-color: #fff;
+    color:rgb(231, 33, 15);
+    border: 1px solid rgb(231, 33, 15);
+}
+
+.btn-blue{
+    background-color: rgb(33, 52, 85);
+}
+
+.btn-blue:hover {
+    background-color: #fff;
+    color: rgb(33, 52, 85);
+    border: 1px solid rgb(33, 52, 85);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.checked {
+    color: orange;
+  }
+
+
+/* measures*/
+.mt-20{margin-top: 20px;}
+.mt-40{margin-top: 40px;}
+
+.mb-40{margin-bottom: 40px;}
+
+
+
+
+.container {
+    width: 80%;
+    max-width: 1920px;
+    /* centrirane po sredata na blok div */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu {
+    background-color: white;
+}
+
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+}
+
+.hero{
+    height: calc(100vh - 200px);
+    background-image: url("../imgs/img-1.png");
+    background-repeat:no-repeat ;
+    background-position: 95% 5%;
+    background-size: 42%;
+}
+
+.hero-title {
+    color: #000;
+    font-size: 34px;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 900;
+    line-height: 40px;
+}
+
+.uptitle{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.title{
+    color: #000;
+    font-size: 24px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.title-info{
+    /* width:76px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.color-red{
+    color: red;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.features {
+    background-image: url("../imgs/img-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.features ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 250px;
+}
+
+.features ul li {
+    position: relative;   
+}
+
+.features ul li:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+.features ul li::after {
+    position: absolute;
+    right: -65px;
+    top: 15%;
+}
+
+.features ul li::before {
+    position: absolute;
+    left: -65px;
+    top: 15%;
+}
+
+.features ul li header h5 {
+    text-transform: capitalize;
+    color: black;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.features ul li p {
+    margin:0;
+}
+
+.features ul:first-of-type li:first-child::after{
+    content: "\e805";
+}
+
+.features ul:first-of-type li:nth-child(2)::after {
+    content: "\e804";
+}
+
+.features ul:first-of-type li:last-child::after {
+    content: "\e803"; 
+}
+
+.features ul:first-of-type li::after , 
+.features ul:last-of-type li::before 
+ {
+    font-family:'smart-watch';
+    color: red;
+    background-color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.features ul:last-of-type li:first-child::before {
+    content: "\e802";
+}
+
+.features ul:last-of-type li:nth-child(2)::before {
+    content: "\e806";
+}
+
+.features ul:last-of-type li:last-child::before {
+    content: "\e807";
+    padding: 10px 17px;
+}
+
+.smartwatch {
+    height: 90vh;
+    background-image: url("../imgs/img-3.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.smartwatch ul {
+    margin-left: 40%;
+    /* padding-top: 30px; */
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.smartwatch ul li {
+    height: 230px;
+    padding: 30px;
+    padding-bottom: 65px;
+    border: 1px solid lightgrey;
+    margin: 0.7em;
+    border-radius: 2%;
+}
+
+.smartwatch ul li header {
+    color: black;
+    text-align: center;
+}
+
+.smartwatch ul li p {
+    text-align: center;
+}
+
+.smartwatch ul li::before  {
+    font-family:'smart-watch';
+    color: red;
+    font-weight: bold;
+    font-size: 1.5em;
+    display: flex;  
+    justify-content: center;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 68px;
+    margin-right: 68px;
+}
+
+.smartwatch ul:first-of-type li:first-child::before{
+    content: "\e80e";
+    
+}
+
+.smartwatch ul:first-of-type li:last-child::before{
+    content: "\e80d";
+}
+
+.smartwatch ul:last-of-type li:first-child::before{
+    content: "\e80c";
+}
+
+.smartwatch ul:last-of-type li:last-child::before{
+    content: "\e80b";
+}
+
+.head-review {
+    padding-bottom: 100px;
+}
+
+.reviews section {
+    /* position: relative; */
+    border: 1px solid lightgrey;
+    border-radius: 2%;
+    padding: 8%;
+    margin: 10px;
+    background-color: white;
+    
+}
+
+.reviews {
+    padding-bottom: 60px;
+}
+
+.reviews div {
+    position: relative;
+    display: table-cell;
+    text-align: center;
+}
+
+.reviews div section header h5 {
+    color: black;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.reviews div section header h6 {
+    margin-top: 0;
+}
+
+.reviews div section header {
+    margin-top: 40px;
+}
+
+.reviews div .img1 {
+    position: absolute;
+    border: 5px solid white; 
+    box-shadow: 0 0 3px lightgrey;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    right: 35%;
+    top: -10%;
+}
+
+.img1 img {
+    width: 100%;
+    height: auto;
+}
+
+.customers::after {
+    content: "\e800";
+    position: absolute;
+    font-family: 'smart-watch';
+    color: white;
+    background-color: red;
+    /* font-weight: bold; */
+    font-size: 1.5em;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    bottom: -12px;
+    right: 42%;
+}
+
+.pricing {
+    border: 2px solid red;
+    display: flex;
+}
+
+.pricing .img1 {
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    background-color: white;
+    margin: auto;
+}
+
+.red-side {
+    position: relative;
+    border: 2px solid red;
+    background-color: red;
+    width: 60%;
+    padding: 145px 0;
+}
+
+.red-side p {
+    margin: 30px;
+    text-align: center;
+    color: white;
+}
+
+.red-side h5, .red-side h6 {
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+
+.red-side .stars {
+    justify-content: center;
+    display: flex;
+}
+
+.price {
+    padding-bottom: 50px;
+}
+
+
+.red-side::after {
+    content: "\e800";
+    position: absolute;
+    font-family: 'smart-watch';
+    color: white;
+    background-color: red;
+    /* font-weight: bold; */
+    font-size: 1.5em;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    bottom: -25px;
+    right: 50%;
+}
+
+.white-side {
+    width: 40%;
+    /* border: 2px solid red; */
+}
+
+.white-side header h4 {
+    text-align: center;
+    color: black;
+    margin-bottom: 0;
+}
+
+.white-side .old-price{
+    font-size: 40px;
+    margin-left: 105px;
+    margin-top: 0;
+    text-decoration: line-through;
+}
+
+.white-side .round {
+    display: inline-block;
+    vertical-align: text-bottom;
+    background-color: red;
+    color: white;
+    border-radius:20px ;
+    font-size: 16px;
+    padding: 5px 20px;
+    margin-left: 20px;
+}
+
+.white-side .new {
+    display: table;
+    font-size: 70px;
+    color: black;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.white-side header h5{
+    text-align: center;
+    color: black;
+}
+
+.white-side ul{
+    margin-top: 80px;
+    padding-left: 20%;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+.white-side ul li{
+    list-style-type: none;
+    color: black;
+}
+
+.white-side li:before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url("../imgs/check.png");
+    background-size: cover;
+    margin-right: 20px;
+}
+
+.white-side .btn {
+    margin: 0 auto;
+    display: block;
+}
+
+.white-side p{
+    text-align: center;
+    color: black;
+    font-size: 13px;
+}
+
+.questions h5 {
+    color: black;
+}
+
+.questions {
+    display: flex;
+}
+
+.contacts{
+    display: flex;
+    box-sizing: border-box;
+}
+
+.first-half {
+    padding: 130px 0 130px 90px;
+    width: 50%;
+}
+
+.first-half div {
+    color: black;
+}
+
+.first-half div:last-of-type a:first-of-type::before{
+    content: "\e801";
+    color: black;
+    font-family: 'smart-watch';
+    margin-right: 10px;
+}
+
+.first-half div:last-of-type a:last-child::before{
+    content: "\f0e0";
+    color: black;
+    font-family: 'smart-watch';
+    margin-right: 10px;
+}
+
+
+.contact-us {
+    width: 50%;
+    padding: 130px 90px 130px 0;
+    margin-left: 20px;
+}
+
+.contact-us header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-us input , textarea{
+    padding: 12px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.buy-now {
+    margin-bottom: 40px;
+}
+
+footer{
+    background-color: rgb(33, 52, 85);
+}
+
+footer nav{
+    padding: 40px 80px;
+}
+footer a{
+    color: white;
+}
+
+.social-media a:first-of-type::after{
+    content: "\f099";
+    font-family:'social';
+    color: white;
+}
+
+.social-media a:nth-of-type(2)::after{
+    content: "\f16d";
+    font-family:'social';
+    color: white;
+}
+
+.social-media a:last-of-type::after{
+    content: "\f0e0";
+    font-family:'smart-watch';
+    color: white;
+}
+
+.social-media {
+    padding: 10px 80px 55px;
+    color:white;
+}
+
+footer hr {
+    border: 0.5px solid;
+}
