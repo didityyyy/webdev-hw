@@ -1,0 +1,29 @@
+body {
+    background-color: brown!important; /*comment*/
+} 
+/* comment
+multiline */
+
+.myfirstclass {
+    color:white;
+}
+
+#id_01 {
+    height: 50px;
+    width: 50px;
+    background-color: cornsilk;
+}
+
+#id_02 {
+    height: 50px;
+    width: 50px;
+    background-color: darkcyan;
+}
+
+* {
+    color: darkgreen;
+}
+
+.myfirstclass , #id_01 {
+    border: 10px solid black;
+}

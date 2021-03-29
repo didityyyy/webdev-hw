@@ -1,0 +1,97 @@
+.second_list li:nth-child(3) {
+    color: darkblue;
+}
+
+.second_list li:nth-last-child(2){
+    background-color: darkcyan;
+}
+
+[class$="list"] li:nth-last-of-type(2){
+    background-color: darkgoldenrod;
+}
+
+[class^="color_"] {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+[class^="color_"]:first-of-type{
+    background-color: #ff7f50;
+    opacity: 0.5;
+}
+
+[class^="color_"]:last-of-type{  /*prozrachnost rgba za fon*/
+    background-color: rgba(255, 127, 80, 0.5);
+}
+
+/* BACKGROUND */
+
+.hero-section {
+    height: 100vh;
+    background-image: url("../images/city.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero {
+    height:50vh;
+    background-image: url("../images/grass.png"),  url("../images/grass.png"), url("../images/rabbit.png");
+    background-size: 15% ,15%;
+    background-repeat: repeat-x, repeat-x, no-repeat;
+    border: 1px solid #000;
+    background-position:bottom ,22% bottom,left bottom;
+}
+
+/* BORDERS */
+
+.bordered {
+    width: 150px;
+    height: 150px;
+    border: 1px solid coral;
+    border-style: dotted;
+    border-color: aqua;
+    border-right-color: brown;
+    border-radius: 50%; /*ideal circle*/
+    box-shadow: 10px 10px 5px rgb(122, 113, 113);
+}
+
+[class^="margin-container"] {
+    height: 200px;
+    width: 200px;
+    border: 1px solid #000;
+}
+
+.margin-container div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ff7f50;
+    margin: 10px 20px 50px 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.margin-container div p{
+    margin: 0;
+}
+
+.margin-container_01 div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ff7f50;
+    margin: 10px 20px;
+}
+
+.margin-container_02 div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ff7f50;
+    margin: 10px 20px 50px;
+}

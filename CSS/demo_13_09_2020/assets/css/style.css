@@ -1,0 +1,73 @@
+body{
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 3px;
+    overflow-x: hidden; /*no scroll*/
+}
+a {
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+a:hover {
+    color: blueviolet;
+}
+
+.t-bone{
+    list-style-type: none;
+    list-style-image: url("../images/logo.png");
+}
+
+.absolute-img-before {
+    list-style-type: none;
+}
+
+.absolute-img-before li{
+    position: relative;
+    line-height: 30px;
+}
+
+.absolute-img-before li::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url("../images/logo2.png");
+    background-size: cover;
+    position: absolute;
+    left: -25px;
+    top: 2px;
+}
+
+.simple {
+    list-style-position: inside;
+    padding-left: 0 ;
+}
+
+.parent {
+    overflow: scroll;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.child {
+    width: 150px;
+    height: 150px;
+    background-color: cadetblue;
+}
+
+.fixed-position {
+    position: fixed;
+    top: 50px;
+    background: chartreuse;
+    right: 10px;
+}
+
+.sticky-position {
+    position: sticky;
+    background-color: chocolate;
+    top: 50px;
+}

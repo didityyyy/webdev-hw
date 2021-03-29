@@ -1,0 +1,122 @@
+.class_01 p {
+    font-size: 24px;
+    color: blue;
+}
+body>p {  /*direktniq prqk naslednik na body*/
+    color: red;
+}
+
+.class_01+section { /* + prixvashtame vsichki elementi koito sa prqk direkten naslednik na elementa koito e predi tqh i sa na edno nivo s tqh */
+    background-color: sandybrown;
+}
+.class_01~section:not(.pseudo){ /* ~ prixvashta vsichki elementi section */
+    border: 10px solid black;
+}
+
+/* ATRIBUTE SELECTORS */
+
+[alt] {
+    border: 5px solid seagreen;
+}
+
+[alt="puffin"] {
+    border: 5px solid salmon;
+}
+
+[alt^="puffin"] { /* ^ se izpolzva kogato teksta zapochva taka*/
+    border: 5px dotted slateblue;
+}
+
+[alt$="puffin"] { /* $ se izpolzva kogato teksta zavurshva taka*/
+    border: 5px dotted cadetblue;
+}
+
+[alt~="puffin"] { /* ~ se izpolzva kogato iskame opredelena dyma (samostoqtelna)*/
+    border: 5px solid saddlebrown;
+}
+
+[alt*="puffin"] {/* * se izpolzva kogato iskame vsichki elementi koito sudurjat tazi dyma*/
+    border: 5px dotted hotpink;
+}
+
+/* PSEUDO CLASS */
+
+section.pseudo p.hover:hover {
+    color: rgb(73, 73, 199);
+}
+
+.pseudo header .title {
+    text-align: center;
+}
+
+.pseudo header .title:before {
+    content: "-----";
+}
+.pseudo header .title:after {
+    content: "-----";
+}
+
+[type="text"]:read-only {
+    background-color: burlywood;
+}
+
+[type="text"]:disabled {
+    background-color: rgb(121, 116, 110);
+}
+
+.checkedbox .error {
+    display: none;
+}
+
+[type="checkbox"]:checked~.checkedbox {
+    display: block;
+}
+
+[type="number"]:invalid {
+    background-color: red;
+}
+
+[type="number"]:invalid+.error {
+    display: block;
+    color: red;
+}
+
+.title::selection {
+    background-color: hotpink;
+}
+::selection {
+    background-color: darkgoldenrod;
+}
+
+a:visited{
+    color: darkgreen;
+}
+a:active{
+    color: darkmagenta;
+}
+
+.pseudo_empty p:empty{
+    background: darkmagenta;
+    width: 150px;
+    height: 20px;
+}
+
+.childs li:first-child{
+    color:red;
+}
+
+.childs li:last-child{
+    color: darkorchid;
+}
+
+.child li:first-child{
+    color: red;
+}
+
+.child li:first-of-type{
+    color: red;
+}
+
+.child li:last-of-type{
+    color: darkorchid;
+}

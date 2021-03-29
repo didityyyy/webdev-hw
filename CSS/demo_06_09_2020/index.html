@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="#form">Go to form</a>
+        <a href="https://www.google.com/search?q=image&rlz=1C1GCEA_enBG855BG855&sxsrf=ALeKk02m5ilp138XqqZwoSwVOFYivcLLhw:1599594746869&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiZma_lqtrrAhVCA2MBHYYDAe0Q_AUoAXoECAwQAw&biw=767&bih=744">Go to images</a>
+        <a href="https://praktiker.bg/bg/" target="_blank">Go visit praktiker</a>
+    </nav>
+    <p>You are an awesome person and really generous</p>
+    <div class="class_01">
+        <p>You are an awesome person and really generous</p>
+        <p>You are an awesome person and really generous</p>
+    </div>
+    <section>
+        <header>
+            <h3>Hello beautiful</h3>
+        </header>
+        <p>You are an awesome person and really generous</p>
+    </section>
+    <section>
+        <div>
+            <p>You are an awesome person and really generous</p>
+        </div>
+    </section>
+    <p>You are an awesome person and really generous</p>
+
+    <section>
+        <figure>
+            <img src="https://cdn.jpegmini.com/user/images/slider_puffin_jpegmini_mobile.jpg" alt="puffin-01"
+                width="150px">
+            <figcaption>Fig. 1: Puffin</figcaption>
+        </figure>
+        <figure>
+            <img src="https://cdn.jpegmini.com/user/images/slider_puffin_jpegmini_mobile.jpg" alt="01-puffin"
+                width="150px">
+            <figcaption>Fig. 1: Puffin</figcaption>
+        </figure>
+        <figure>
+            <img src="https://cdn.jpegmini.com/user/images/slider_puffin_jpegmini_mobile.jpg" alt="puffin"
+                width="150px">
+            <figcaption>Fig. 1: Puffin</figcaption>
+        </figure>
+    </section>
+    <p class="hover">You are an awesome person and really generous</p>
+
+    <section class="pseudo">
+        <!-- p.hover+p -->
+        <header>
+            <h4 class="title">Hello my name is ...</h4>
+        </header>
+        <p class="hover">You are an awesome person and really generous</p>
+        <p>You are an awesome person and really generous</p>
+
+    </section>
+
+    <form id="form">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" value="Dayana Dimitrova" readonly>
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" class="age" id="age" min="18">
+            <p class="error">Invalid format</p>
+        </div>
+        <!-- div>label+input:number -->
+        <div>
+            <label for="measure">Measure</label>
+            <input type="number" name="" id="measure" min="18">
+            <p class="error">Invalid format</p>
+        </div>
+        <div>
+            <label for="street">Street</label>
+            <input type="text" id="street" disabled>
+        </div>
+        <div>
+            <label for="check">Check</label>
+            <input type="checkbox" id="check">
+            <div class="checkedbox">
+                <p>Check this box</p>
+            </div>
+        </div>
+        <!-- <div>
+            <label for=""></label>
+            <input type="text">
+        </div>
+        <div>
+            <label for=""></label>
+            <input type="text">
+        </div> -->
+
+        <div class="pseudo_empty">
+            <p>You are an awesome person and really <span>generous</span></p>
+            <p>You are an awesome person and really generous</p>
+            <p></p>
+        </div>
+
+        <ul class="childs">
+            <li>You are an awesome person and really generous</li>
+            <li>You are an awesome person and really generous</li>
+            <li>You are an awesome person and really generous</li>
+            <li>You are an awesome person and really generous</li>   
+        </ul>
+
+        <ul class="child">
+            <p>5</p>
+            <li>You are an awesome person and really generous</li>
+            <li>You are an awesome person and really generous</li>
+            <li>You are an awesome person and really generous</li>
+            <li>You are an awesome person and really generous</li>   
+        </ul>
+    </form>
+</body>
+
+</html>
