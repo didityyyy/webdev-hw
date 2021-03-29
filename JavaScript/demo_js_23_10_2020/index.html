@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Address Book</title>
+</head>
+<body>
+    <!-- SIDE BAR -->
+    <div id="mySideNav" class="mySideNav"> 
+        <a href="#javascript">Link 1</a>
+        <a href="#javascript">Link 2</a>
+        <a href="#javascript">Link 3</a>
+        <a href="#javascript">Link 4</a>
+    </div>
+
+
+
+   <div class="container" id="wrapContent">
+        <span class="sideNav" onclick="openSideNavigation()/*navigation.openNavMenu()*/">&#9776;</span>
+       <!-- header -->
+       <header>
+           <h1>Contact list</h1>
+       </header>
+
+       <!-- Attach functionality for search contacts -->
+       <input 
+       type="search"
+       placeholder="Search name in Address Book"
+       id="globalSearch"
+       class="search"
+       onkeyup="globalSearchFunction()/*search.getResult()*/"
+       >
+
+       <!-- Add new person -->
+       <div>
+           <!-- add new contact in the list -->
+           <button onclick="addNewPerson()/*addNewPerson.addNewPerson()*/">
+                Add new contact
+           </button>
+           <!-- describe value of added contact -->
+           <input type="text" id="addNewPerson" class="addNewPerson">
+        </div>
+
+       <!-- Make list of names we will search -->
+       <ul
+       id="addressBook">
+           <li><a href="#javascript">Silviya Stoilova</a></li>
+           <li><a href="#javascript">Mihail Dimitrov</a></li>
+           <li><a href="#javascript">Dayana Dimitrova</a></li>
+           <li><a href="#javascript">Maximilian Maximov</a></li>
+           <li><a href="#javascript">Ivan Ivanov</a></li>
+           <li><a href="#javascript">Cvetomir Tanev</a></li>
+           <li><a href="#javascript">Dimitar Dimitrov</a></li>
+           <li><a href="#javascript">Belloslava Naydenova</a></li>
+           <li><a href="#javascript">Christina Parova</a></li>
+           <li><a href="#javascript">Borislava Bogdanova</a></li>
+       </ul>
+   </div>
+    
+
+
+<button onclick="openModal()">Open modal</button>
+<!-- MODAL BOX -->
+<div id="modalBox" class="modalBox">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close" style="font-size: 25px;">&times;</span>
+            <header>
+                <h2 id="personName"></h2>
+            </header>
+        </div>
+        <div class="modal-body">
+            <div id="data-container">
+
+                <!-- EDIT MODE OFF -->
+                    <div id="data-info" class="edit-mode-off">
+                        <p>Phone: <span id="userPhone">0998 35 05 79</span></p>
+                        <p>What is your favorite color? : <span id="userFavoriteColor">Green</span></p>
+                    </div>
+    
+                <!-- EDIT MODE ON -->
+                    <div id="edit-data" class="edit-mode-on">
+                        <form id="editDataForm" >
+                            <laber for="phone">Phone</laber>
+                            <input type="text" class="phone" id="phone" name="phone" placeholder="Edit your phone number">
+                            <br>
+                            <laber for="favoriteColor">What is your favorite color?</laber>
+                            <input type="text" class="favoriteColor" id="favoriteColor" name="favoriteColor" placeholder="Edit your favorite color">
+                            <br>
+                            <span class="submit" onclick="editData()">Submit</span>
+                        </form>
+                    </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <!-- CLOSE BUTTON -->
+        <button id="close" class="close">Close</button>
+             <!-- EDIT BUTTON -->
+        <button id="edit" class="edit">Edit</button>
+        </div>
+    </div>
+</div>
+
+
+    <script src="assets/js/js.js"></script>
+    <!-- OOP -->
+    <!-- <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/searchTool.js"></script>
+    <script src="assets/js/dataModeration/addNewPerson.js"></script>
+    <script src="assets/js/dataModeration/deleteNewPerson.js"></script>
+    <script src="assets/js/dataModeration/modalBox.js"></script> -->
+</body>
+</html>

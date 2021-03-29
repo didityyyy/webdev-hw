@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="myResult()" >Click me</button>
+    <br>
+    <button onclick="myresult()" >Click me</button>
+    <p id="result"></p>
+
+    <!-- FORM VALIDATION -->
+
+    <form name="contactForm" onsubmit="return validateForm()">
+        <div>
+            <label for="firstName"> First Name</label>
+            <input type="text" id="firstName" name="firstName">
+            <small id="firstNameErrorMessage"></small>
+        </div>
+        <div>
+            <label for="egn">EGN</label>
+            <input type="text" id="egn" name="egn">
+            <small id="egnErrorMessage"></small>
+            <small id="egnNumbersErrorMessage"></small>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+            <small id="emailErrorMessage"></small>
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone">
+            <small id="phoneErrorMessage"></small>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+
+    <script src="assrts/js/js.js"></script>
+</body>
+</html>
