@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="searchBar">
+        <input 
+        type="search"
+        placeholder="Search for Course"
+        id="searchBox"
+        onkeyup ="searchCourses()"
+        class="search-box">
+
+        <select name="" id="category"></select>
+    </div>
+    
+
+
+    <div>
+        <ul id="coursesList"></ul>
+    </div>
+    
+
+    <section class="courses">
+        
+        <header>
+        <p class="all-courses" id="allCourses" > 
+            Course
+        </p> <button class="plus" id="addCoursesplus">&plus;</button>
+        </header>
+
+        <p>In promo: </p>
+
+        <!-- <input type="radio" name="category" value="beginner" id="beginners">
+        <label for="beginner" class="category">Begginer</label>
+        <input type="radio" name="category" value="advanced" id="advanced">
+        <label for="advanced" class="category">Advanced</label>
+        <button class="category" id="beginners">Beginner</button>
+        <button class="category" id="advanced">Advanced</button> -->
+        <p class="category" id="beginners">Beginner</p>
+        <p class="category" id="advanced">Advanced</p>
+
+        <div class="modal-course">
+            <header>
+                <h3 id="CourseName"></h3>
+            </header>
+            <p id="logoForCourse"></p>
+            <p id="Description" style="margin-bottom: 30px;"></p>
+
+            <button class="view" id="viewbtn" onclick="viewDetails()">View</button>
+            <button class="edit" id="editbtn" onclick="openEdit()">&#9998;</button>
+            <button class="delete" id="deletebtn">&#128465;</button>
+            <div id="table"></div>
+        </div>
+    </section> 
+
+    <div class="edit-box" id="editBox">
+        <div class="edit-content">
+        <header>
+            <h3>Edit Course</h3>
+        </header>
+            <form>
+                <div>
+                    <label class="subtitle-edit">Course Description</label>
+                    <br>
+                    <input type="text" id="description" >
+                    <br>
+                </div>
+                <div>
+                    <label class="subtitle-edit">Select Category</label>
+                    <br>
+                    <select name="category" id="editCategory">
+                        <option value="beginner">Beginner</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                    <br>
+                </div>
+                <div>
+                    <label class="switch">
+                        <input type="checkbox" id="promotion">
+                        <span class="slider"></span>
+                        
+                    </label> <label>Promotion On</label>
+                    <br>
+                </div>
+                <div>
+                    <label class="subtitle-edit">Description</label>
+                    <p id="Desc"></p>
+                    <textarea name="description" id="editedDesc" cols="30" rows="2"></textarea>
+                </div>
+                <br>
+                <div>
+                    <button class="close" id="close">Close</button>
+                    <button class="save" id="save" onclick="editData()">Save</button>
+                </div>
+            </form>
+       
+        </div>
+    </div>
+
+
+    <div class="create-box" id="createBox">
+        <div class="create-content">
+            <header>
+                <h3>Create Course</h3>
+            </header>
+            <form name="createForm">
+                <div>
+                    <input type="text" name="courseDesc" placeholder="Course Name" required>
+                    <small id="CourseNameErrorMessage"></small>
+                </div>
+                <div>
+                    <input type="text" name="courseUrl" placeholder="Course Url" required>
+                    <small id="UrlErrorMessage"></small>
+                </div>
+                <div>
+                    <input type="text" id="iconC" name="courseIcon" placeholder="Course Icon Url" required>
+                    <p>Or</p>
+                    <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+                    <p><label for="file" style="cursor: pointer;background-color: #eaeaea;padding: 2px; border: 1px solid black;
+                        border-radius: 5px;">Upload Image</label></p>
+                    <p><img id="output" width="200" /></p>
+                    <small id="IconErrorMessage"></small>
+                
+                </div>
+                <div>
+                    <select name="category" id="createCategory" required>
+                        <option value="">Level</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                    <small id="SelectErrorMessage"></small>
+                </div>
+                <div>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label> <label>Promotion On</label>
+                    <br>
+                </div>
+                <div>
+                    <textarea name="description" id="newDescription" cols="30" rows="4" placeholder="Description" required></textarea>
+                    <small id="DescriptionErrorMessage"></small>
+                </div>
+                <div>
+                    <button class="close" id="close" formnovalidate>Close</button>
+                    <button class="save" type="submit" id="save" onclick="createData()">Save</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="js/js.js"></script>
+    <!-- <script src="js/search.js"></script> -->
+    <!-- <script src="js/allCourses.js"></script> -->
+    <!-- <script src="js/editCourse.js"></script>
+    <script src="js/createCourse.js"></script> -->
+</body>
+</html>
